@@ -11,7 +11,7 @@
 <h2 align="center">👨‍💻 About Me</h2>
 
 <p align="center">
-I am a recent <strong>Master of Science in Computer Science</strong> graduate from <strong>Lakehead University</strong> (3.9 GPA, 2026), specializing in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong>. My graduate research focused on brain tumor detection from MRI images using fused CNN feature extraction and metaheuristic optimization, achieving <strong>96.9% classification accuracy</strong> — with a paper submitted to <strong>IEEE Intelligent Systems</strong> and currently awaiting review.
+I am a recent <strong>Master of Science in Computer Science</strong> graduate from <strong>Lakehead University</strong> (3.9 GPA, 2026), specializing in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong>. My graduate research focused on brain tumor detection from MRI images using fused CNN feature extraction and metaheuristic optimization, achieving <strong>96.9% classification accuracy</strong> — with a paper submitted to <strong>Springer Nature</strong> and currently awaiting review.
 <br/><br/>
 I enjoy working with Deep Learning, Generative AI, and LLMs — whether that's training models from scratch or experimenting with foundation models, there's always something new to explore and learn.
 <br/><br/>
