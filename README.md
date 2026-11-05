@@ -55,6 +55,8 @@ I am actively seeking opportunities in <strong>Machine Learning</strong>, <stron
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
   <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white"/>
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white"/>
 </p>
 
 <h4 align="center">Tools & Platforms</h4>
@@ -85,6 +87,24 @@ I am actively seeking opportunities in <strong>Machine Learning</strong>, <stron
 ---
 
 <h2 align="center">🚀 Projects</h2>
+
+### 🧠 [Brain Tumor MRI Classifier: Live Demo](https://brain-tumor-demo-293791125431.northamerica-northeast2.run.app)
+`Python` `TensorFlow` `Gradio` `Docker` `Google Cloud Run` `GitHub Actions`
+
+Public web demo of my graduate research pipeline: upload an MRI image and get a tumor prediction. It fuses features from ResNet50, VGG16 and EfficientNetB0, narrows them with Black Hole Optimization feature selection, and classifies with an optimized SGD logistic regression. The decision threshold is set to 0.30 to favor recall, since a missed tumor costs more than a false alarm. Packaged with Docker, served as a Gradio app on Google Cloud Run, and deployed by GitHub Actions through Workload Identity Federation, so no keys are stored. A research demo, not for diagnosis. The first load can take about 30 seconds while the container starts.
+
+[Live demo](https://brain-tumor-demo-293791125431.northamerica-northeast2.run.app) · [Code](https://github.com/avi-nauty/Brain-Tumor-Classification-using-Machine-Learning)
+
+---
+
+### 🇨🇦 [Canada Labour API](https://github.com/avi-nauty/canada_labour_api)
+`Python` `FastAPI` `Pydantic` `httpx` `Docker` `Google Cloud Run` `GitHub Actions`
+
+A FastAPI service in front of Statistics Canada's labour force data, built to be dependable against a source I don't control. Callers ask in plain terms (region, age group, number of periods) and get clean JSON back. Errors are exceptions, never empty lists, so the cache can't store a failure. Retries happen only for failures that waiting could fix. The cache knows StatCan's monthly release schedule and rechecks when new data is due. 45 offline tests run against recorded replies and a fake clock. Deployed to Google Cloud Run by GitHub Actions through Workload Identity Federation. The first request after a quiet period is slower, because the service scales to zero.
+
+[Live demo](https://canada-labour-api-2341874144.northamerica-northeast2.run.app/docs) · [Code](https://github.com/avi-nauty/canada_labour_api)
+
+---
 
 ### 🧠 [Brain Tumor Detection from MRI Images](https://github.com/avi-nauty/Medical-Image-Classification-using-Machine-Learning)
 `Python` `TensorFlow` `Keras` `Scikit-learn` `Kaggle`
